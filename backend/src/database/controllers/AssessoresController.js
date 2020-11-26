@@ -4,8 +4,6 @@ module.exports = {
 
     async indexLeads(request, response){
 
-        //somente um teste
-
         const id = request.headers.authorization;
         const nameQuery = await connection('assessor').select('name').where('id', id);
         
